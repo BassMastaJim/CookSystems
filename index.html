@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="formvalidation.js" type="text/javascript"></script>
+
+<title>CookSystems HTML Form</title>
+
+</head>
+
+<body onload="init()">
+
+<h1>Welcome to the Employee Portal</h1>
+
+<h3>Please enter your personal information to create an account</h3>
+
+
+<form id="idform">
+   First name: <input type="text" id="fname"><br>
+   Last name: <input type="text" id="lname"><br>
+   Gender: <input type="radio" id="gmale" name="sex" value="male">Male 
+   <input type="radio" name="sex" id="gfemale" value="female">Female<br>
+   Address: <input type="text" id="address"><br>
+   City: <input type="text" id="city"><br>
+   State: <select id="state">
+             <option value="tn">TN</option>
+             <option value="tx">TX</option>
+             <option value="ms">MS</option>
+             <option value="ar">AR</option>
+             <option value="AL">AL</option>
+          </select>
+   <br>
+   <input type="Button" style="visibility:hidden;" value="Submit" id="submit" onclick="onSubmit()">
+
+
+</form>
+
+</body>
+</html>
